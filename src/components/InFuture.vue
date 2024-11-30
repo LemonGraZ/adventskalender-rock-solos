@@ -8,7 +8,7 @@
       variant="flat"
       style="max-width: 200px"
     >
-      Be patient...
+      Noch etwas Geduld...
     </v-card>
   </v-container>
 </template>
