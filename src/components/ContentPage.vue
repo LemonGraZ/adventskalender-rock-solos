@@ -27,7 +27,6 @@ export default {
   },
   computed: {
     isInFuture() {
-      return false;
       const today = new Date();
       today.setHours(0, 0, 0, 0);
       const chosenDate = new Date(2024, 11, this.currentDay);
