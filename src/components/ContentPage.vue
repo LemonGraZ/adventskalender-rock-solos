@@ -1,5 +1,6 @@
 <template>
   <div class="fill-width fill-height bg">
+    <TodayBanner v-if="currentDay != (new Date()).getDate()" />
     <QuestionFrame
       v-if="currentDay >= 1 && currentDay <= 24 && !isInFuture"
       :day="currentDay"
@@ -9,8 +10,6 @@
 </template>
 
 <script>
-import QuestionFrame from "@/components/QuestionFrame.vue";
-import InFuture from "./InFuture.vue";
 import { useRouter } from "vue-router";
 
 export default {
